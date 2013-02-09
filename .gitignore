@@ -1,0 +1,10 @@
+.DS_Store
+build.log
+build
+npm-debug.log
+tmp*.class
+*.pyc
+*.pyo
+Resources
+modules
+plugins

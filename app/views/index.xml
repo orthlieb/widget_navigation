@@ -1,0 +1,6 @@
+<Alloy>
+	<Window class="container">
+	    <Label id="label">Main Window</Label>
+		<Widget src="com.orthlieb.navigationgroup" id="navgroup"/>
+	</Window>
+</Alloy>

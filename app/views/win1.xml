@@ -1,0 +1,5 @@
+<Alloy>
+	<Window id="win1">
+	    <Button id="button" onClick="ButtonClick">Window 2</Button>
+	</Window>
+</Alloy>

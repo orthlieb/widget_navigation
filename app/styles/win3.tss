@@ -1,0 +1,9 @@
+"#win3": {
+    backButtonTitle: "Back",
+    backgroundColor: "white",
+    title: "Window 3"
+},
+
+"#button": {
+    center: { x: "50%", y: "50%" }
+} 

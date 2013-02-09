@@ -1,0 +1,9 @@
+"#win1": {
+    backButtonTitle: "Back",
+    backgroundColor: "white",
+    title: "Window 1"
+},
+
+"#button": {
+    center: { x: "50%", y: "50%" }
+} 
