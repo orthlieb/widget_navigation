@@ -141,6 +141,7 @@ Example:
 ```
 Alloy.Globals.navGroup.on("close", function (e) {
 	alert("Window closed.", e.source.title2hot))
+```
 
 ## Future Work
 
