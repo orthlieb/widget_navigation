@@ -69,7 +69,7 @@ exports.home = function (options) {
         // Because we're closing windows on the stack as we traverse it,
         // it's possible that close events might pop windows off the stack,
         // so we make a copy to manipulate.
-        var stack = _.clone($.windowStack);
+        var stack = $.windowStack.slice(0);
         for (var i = stack.length - 1; i > 0; i--) {
             if (OS_IOS) {
                 $.navGroup.close(stack[i], options);
