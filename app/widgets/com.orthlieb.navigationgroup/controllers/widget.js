@@ -34,7 +34,8 @@ exports.open = function (windowToOpen, options) {
     if (OS_IOS) {
         if ($.windowStack.length === 1) {
             $.navGroup = Ti.UI.iPhone.createNavigationGroup({
-                window : windowToOpen
+                window : windowToOpen,
+                options: options
             });
             $.parent.add($.navGroup);
         } else {
