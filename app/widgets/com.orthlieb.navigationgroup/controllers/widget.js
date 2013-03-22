@@ -37,7 +37,18 @@ exports.open = function (windowToOpen, options) {
                 window : windowToOpen,
                 options: options
             });
-            $.parent.add($.navGroup);
+            if ($.parent)   
+                // Declared inside a view
+                $.parent.add($.navGroup);
+            else {  
+                // Created inline via createWidget
+                // We need a container window to host the NavigationGroup in.
+                var containerWindow = Ti.UI.createWindow();
+                containerWindow.add($.navGroup);
+                containerWindow.open({
+                    transition : options.transition
+                });
+            }
         } else {
             $.navGroup.open(windowToOpen, options);                
         }
